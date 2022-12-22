@@ -20,13 +20,13 @@ data.films.forEach(element => {
     tarjetas.innerHTML += tarjeta
 });
 
-if (todas) {
+// if (todas) {
   //botón todas
   document.getElementById("todas").addEventListener("click",function() {
   const tarjetas = document.getElementById("tarjetas");
   tarjetas.innerHTML = "";
   console.log (tarjetas);
-data.films.forEach(element => {
+  data.films.forEach(element => {
     const tarjeta = `
     <div class="contenedor"> 
           <section class="imagen"><figure><img id="poster" src="${element.poster}"</figure></section>
@@ -39,28 +39,30 @@ data.films.forEach(element => {
     tarjetas.innerHTML += tarjeta});
     console.log ("Mostrar Todas");
   });
-} 
+// } 
 //botón Hayao
-document.getElementById("Hayao Miyazaki").addEventListener("click",function(event) { 
-  console.log (event.target.id);
-  let hayao = filterBy(event.target.id, data); //enviar dos argumentos
-  //enlazar función filter de data.js
-  tarjetas.innerHTML = "";
-  hayao.forEach(element => {
-    const tarjeta = `
-    <div class="contenedor"> 
-          <section class="imagen"><figure><img id="poster" src="${element.poster}"</figure></section>
-          <section class="texto">
-            <p id= "titulo"> ${element.title}</p>
-            <p id= "datos"> Director: ${element.director} <br> Productor: ${element.producer} <br> Lanzamiento: ${element.release_date} <br> Score: ${element.rt_score}</p>
-          </section>
-    </div>
-    `
-    tarjetas.innerHTML += tarjeta});
+data.films.director.forEach(element => console.log(element));
+  // document.getElementById("Hayao Miyazaki", "Isao Takahata", "Yoshifumi Kondō", "Hiroyuki Morita", "Gorō Miyazaki", "Hiromasa Yonebayashi").addEventListener("click",function(event) { 
+  // console.log (event.target.id);
+  
+  //  let director = filterBy(event.target.id, data); //enviar dos argumentos
+  // //enlazar función filter de data.js
+  // tarjetas.innerHTML = "";
+  // director.forEach(element => {
+  //   const tarjeta = `
+  //   <div class="contenedor"> 
+  //         <section class="imagen"><figure><img id="poster" src="${element.poster}"</figure></section>
+  //         <section class="texto">
+  //           <p id= "titulo"> ${element.title}</p>
+  //           <p id= "datos"> Director: ${element.director} <br> Productor: ${element.producer} <br> Lanzamiento: ${element.release_date} <br> Score: ${element.rt_score}</p>
+  //         </section>
+  //   </div>
+  //   `
+  //   tarjetas.innerHTML += tarjeta}); 
     
-    let menu = document.getElementById("menu-principal");
-    menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
-});
+  //   let menu = document.getElementById("menu-principal");
+  //   menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
+// });
 
 document.getElementById("reciente").addEventListener("click",function() { 
   console.log ("Muestra Más recientes");
@@ -77,4 +79,3 @@ document.getElementById("reciente").addEventListener("click",function() {
 
 // const datos = document.getElementById("datos")
 // datos.innerHTML = ` <p id= "datos"> Director: ${data.films[0].director} <br> Productor: ${data.films[0].producer} <br> Lanzamiento: ${data.films[0].release_date} <br> Score: ${data.films[0].rt_score}</p>`
-
