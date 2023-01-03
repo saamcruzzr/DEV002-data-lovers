@@ -1,12 +1,3 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
 
 // //CALCULO
 // export const promedio = (data) => {
@@ -24,7 +15,7 @@ export const anotherExample = () => {
 // } 
 
 // DIRECTORES
-export const filterBy = (string, data) => {
+export const filterByDirector = (string, data) => {
   // console.log (string, data.films)
   const result =  data.films.filter(movie => movie.director === string); // retorno implicito
   console.log(result);
@@ -33,6 +24,7 @@ export const filterBy = (string, data) => {
   // contador.innerHTML = result.length;
   return result;
 } 
+
 // LANZAMIENTO
 export const sortByA = (data) => {
   const result = [...data.films].sort((a,b) => {
@@ -44,8 +36,7 @@ export const sortByA = (data) => {
     }
     return 1;
   });
-    // .slice()
-    // .sort((a,b) => b.release_date - a.release_date);
+
     console.log(result);
     return result ;
 } 
@@ -66,49 +57,9 @@ export const sortByD = (data) => {
     console.log(result);
     return result ;
 } 
- // const result = cloneData.films.release_date.sort()
-  // //  => {
-  // //   return x.release_date.localeCompare(y.release_date);
-  // // });
-  // console.log(cloneData);
-  // console.log(result);
-  // return result; 
 
-// // .filter(movie => movie.rt_score === string); // retorno implicito
-  // cloneDataOriginal.sort((itemA, itemB) => {
-  //   // return itemA.localeCompare(itemB);
-  //   console.log(itemA);
-  //   console.log(itemB);
-  //   console.log(itemA - itemB);
-  //   return itemA - itemB;
-  // });
-  // return cloneDataOriginal;
-//   const years = data.films.sort(year => year.release_date === string);;
-//   years.sort((a,b)=>a-b);  
-//   console.log(years);
-// data.films.sort(function (a, b) {
-//   if (a.release_date > b.release_date) {
-//     return 1;
-//   }
-//   if (a.release_date < b.release_date) {
-//     return -1;
-//   }
-//   // a must be equal to b
-//   return 0;
-// }
-
-// SCORE     ***CHECAR!!!!
-// export const filterByS69 = (x, data) => {
-//   // console.log (string, data.films)
-//   const result =  data.films.filter(movie => movie.rt_score <= 69); 
-//   console.log(result);
-//   console.log("Resultado menos de 69 " + x);
-//   console.log("Total " + result.length);
-//   // contador.innerHTML = result.length;
-//   return result;
-// } 
-export const filterByS = (min, max, data) => {
-  // console.log (string, data.films)
+// SCORE
+export const filterByScore = (min, max, data) => {
   const result =  data.films.filter(movie => {
     return (movie.rt_score <= max && movie.rt_score >= min)
   }); 
@@ -118,51 +69,3 @@ export const filterByS = (min, max, data) => {
   // contador.innerHTML = result.length;
   return result;
 } 
-// export const filterByS81 = (x, data) => {
-//   // console.log (string, data.films)
-//   const result =  data.films.filter(movie => {
-//     return (movie.rt_score <= 85 && movie.rt_score >= 81)
-//   }); 
-//   console.log(result);
-//   console.log("Resultado 81 a 85 " + x);
-//   console.log("Total " + result.length);
-//   // contador.innerHTML = result.length;
-//   return result;
-// } 
-// export const filterByS86 = (x, data) => {
-//   // console.log (string, data.films)
-//   const result =  data.films.filter(movie => {
-//     return (movie.rt_score <= 90 && movie.rt_score >= 86)
-//   }); 
-//   console.log(result);
-//   console.log("Resultado 86 a 90 " + x);
-//   console.log("Total " + result.length);
-//   // contador.innerHTML = result.length;
-//   return result;
-// } 
-// export const filterByS91 = (x, data) => {
-//   // console.log (string, data.films)
-//   const result =  data.films.filter(movie => {
-//     return (movie.rt_score <= 95 && movie.rt_score >= 91)
-//   }); 
-//   console.log(result);
-//   console.log("Resultado 91 a 95 " + x);
-//   console.log("Total " + result.length);
-//   // contador.innerHTML = result.length;
-//   return result;
-// } 
-// export const filterByS96 = (x, data) => {
-//   // console.log (string, data.films)
-//   const result =  data.films.filter(movie => movie.rt_score >= 96); 
-//   console.log(result);
-//   console.log("Resultado 95 a 100 " + x);
-//   console.log("Total " + result.length);
-//   // contador.innerHTML = result.length;
-//   return result;
-// } 
-// export const filterByScore = (string, data) => {
-//   console.log (string, data.films)
-//   const result =  data.films.filter(movie => movie.rt_score === string); // retorno implicito
-//   console.log(result)
-//   return result;
-// } 
