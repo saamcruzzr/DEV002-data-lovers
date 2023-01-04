@@ -43,6 +43,23 @@ export let sumaByScore = (data) => {
 //   console.log(suma);
 // }
 
+// Links para revisar *******
+//videos
+// https://www.youtube.com/results?search_query=sumar+elementos+de+un+objeto+javascript
+// https://www.youtube.com/watch?v=IyWwAxUNZ7c
+// https://www.youtube.com/watch?v=vNldyoF7uLE
+// https://www.youtube.com/shorts/E8V92o_6Fjo
+// https://www.youtube.com/watch?v=U12dHUrPzgg
+// https://www.youtube.com/watch?v=BGXwssmxGuY
+// https://www.youtube.com/watch?v=rfm0lWiCk4k
+// https://www.youtube.com/watch?v=r8Nu5R6PQtI
+// https://www.youtube.com/watch?v=2UvMV-QK4jk&t=4s   https://byspel.com/calcular-promedio-en-javascript/
+//documentacion
+// https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/first-splash/number-guessing-game.html#L54
+// https://es.stackoverflow.com/questions/490712/como-hago-para-sumar-los-string-que-est%C3%A1n-dentro-de-estos-array-1-4-1
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+// https://www.freecodecamp.org/espanol/news/como-manipular-arreglos-en-javascript/
+
 
 // DIRECTORES
 export const filterByDirector = (string, data) => {
