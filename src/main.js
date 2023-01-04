@@ -1,7 +1,27 @@
 import data from './data/ghibli/ghibli.js';
-import { filterByDirector, sortByA, sortByD, filterByScore } from './data.js';
+import { filterByDirector, sortByA, sortByD, filterByScore, sumaByScore } from './data.js';
 
-//
+
+// CÁLCULO
+// document.getElementById("menu-principal").addEventListener("click", function(){
+//   const calculoSuma = document.getElementById("contador");
+//   console.log(calculoSuma)
+//   calculoSuma.innerHTML ="";
+//   let suma = 0;
+//   data.films.for(let n of suma){
+//     suma += n;
+//   }
+// })
+// const contador = document.getElementById("contador");
+document.getElementById("menu-principal").addEventListener("click",function() { 
+  let sumas = sumaByScore(data); 
+  let suma = sumas/20 ;//enviar dos argumentos
+  //enlazar función filter de data.js
+    // let menu = document.getElementById("menu-principal");
+    // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
+
+return suma
+});
 
 
 // TODAS LAS TARJETAS 
@@ -206,3 +226,4 @@ document.getElementById("96-100").addEventListener("click",function(event) {
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
+

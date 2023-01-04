@@ -1,5 +1,29 @@
 
-// //CALCULO
+//CALCULO
+
+export let sumaByScore = (data) => {
+  // const sum = data.films.map(  n => Number( n ) )
+  // .reduce( (curr, accum) => curr.rt_score + accum.rt_score, 0);
+  // console.log( "Consola de suma " +sum );
+  
+  // const sum = data.films.reduce( (curr, accum) => curr.rt_score + accum.rt_score, 0);
+  // console.log( "Consola de suma " +sum );
+
+  var total = data.films.map(  n => Number( n ) ).reduce(function(a, b){ return a.rt_score + b.rt_score; });
+  console.log("resultado " + total);
+  console.log(total);
+}
+// const arr = [1, 2, 3, 4];
+  // const initialValue = 0;
+  // const sumWithInitial = array1.reduce(
+  //   (accumulator, currentValue) => accumulator + currentValue,
+  //   initialValue
+  // );
+
+  // console.log(sumWithInitial);
+
+
+
 // export const promedio = (data) => {
 //   // const result =  data.films.rt_score/20;
 //   // console.log(result);
@@ -13,6 +37,12 @@
 
 //   return suma;
 // } 
+
+// export const calculeByScore = (data) => {
+//   const suma = [...data.films].reduce((acumulador,valorActual) => acumulador.rt_score + valorActual.rt_score);
+//   console.log(suma);
+// }
+
 
 // DIRECTORES
 export const filterByDirector = (string, data) => {
@@ -69,3 +99,6 @@ export const filterByScore = (min, max, data) => {
   // contador.innerHTML = result.length;
   return result;
 } 
+
+
+
