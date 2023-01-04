@@ -1,6 +1,10 @@
 import data from './data/ghibli/ghibli.js';
 import { filterByDirector, sortByA, sortByD, filterByScore } from './data.js';
 
+//
+
+
+// TODAS LAS TARJETAS 
 
 const tarjetas = document.getElementById("tarjetas");
 data.films.forEach(element => {
@@ -17,6 +21,7 @@ data.films.forEach(element => {
 });
 
 // BOTÓN TODAS 
+
   document.getElementById("todas").addEventListener("click",function() {
   const tarjetas = document.getElementById("tarjetas");
   tarjetas.innerHTML = "";
