@@ -3,25 +3,44 @@ import { filterByDirector, sortByA, sortByD, filterByScore, sumaByScore } from '
 // , sumaByScore
 
 // CÁLCULO
-// document.getElementById("menu-principal").addEventListener("click", function(){
-//   const calculoSuma = document.getElementById("contador");
-//   console.log(calculoSuma)
-//   calculoSuma.innerHTML ="";
-//   let suma = 0;
-//   data.films.for(let n of suma){
-//     suma += n;
-//   }
-// })
-// const contador = document.getElementById("contador");
-document.getElementById("menu-principal").addEventListener("click",function() { 
-  let sumas = sumaByScore(data); 
-  let suma = sumas/20 ;
-  //enlazar función filter de data.js
-    // let menu = document.getElementById("menu-principal");
-    // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
+function resultados() {
+    document.getElementsByClassName("contador").innerHTML = "Total " + sumaByScore + "  " + "Resultado " + numero_correctas;
+  }
 
-return suma
-});
+const sum = "Total " + sumaByScore(data);
+document.getElementsByClassName('contador').innerHTML = sum;
+
+
+// const total = sumaByScore(data).innerHTML;
+// document.getElementsByClassName("contador");
+// const total = suma (){
+//   let sum = sumaByScore(data)
+// }
+
+// // const resultado = total + suma;
+// console.log(total)
+// total.innerHTML = sum;
+// console.log(suma)
+// console.log(resultado)
+//  document.getElementById("menu-principal").addEventListener("click", function(){
+//   const calculoSuma = document.getElementsByClassName("contador");
+//   console.log(calculoSuma)
+//   // calculoSuma.innerHTML ="";
+//   // let suma = 0;
+//   // data.films.for(let n of suma){
+//   //   suma += n;
+//   // }
+// })
+// ******const contador = document.getElementById("contador");
+// document.getElementById("menu-principal").addEventListener("click",function() { 
+//   let sumas = sumaByScore(data); 
+//   // let suma = sumas/20 ;
+//   //enlazar función filter de data.js
+//     // let menu = document.getElementById("menu-principal");
+//     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
+
+// return contador + sumas
+// });
 
 
 // TODAS LAS TARJETAS 
