@@ -10,6 +10,18 @@ function resultados() {
 const sum = "Total " + sumaByScore(data);
 document.getElementsByClassName('contador').innerHTML = sum;
 
+// ejemplo. probar ****
+// function incluir_alumno() {
+//   var nombre = document.getElementById("nombre").value;
+//   var apellido = document.getElementById("apellido").value;
+//   var ciclo = document.getElementById("ciclo").value;
+
+//   // Crea el nuevo alumno
+//   var nuevo_alumno = alumno(nombre, apellido, ciclo);
+
+//   // Escribe el nuevo alumno
+//   document.getElementById("resultado").innerHTML = nuevo_alumno.nombre + " " + nuevo_alumno.apellido + " " + nuevo_alumno.ciclo;
+// }
 
 // const total = sumaByScore(data).innerHTML;
 // document.getElementsByClassName("contador");
