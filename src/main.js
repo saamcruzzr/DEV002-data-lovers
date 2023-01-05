@@ -3,11 +3,11 @@ import { filterByDirector, sortByA, sortByD, filterByScore, promByScore } from '
 // , sumaByScore
 
 // CÁLCULO
-function resultados() {
-    document.getElementsByClassName("contador").innerHTML = "Total " + promByScore + "  " + "Resultado " + numero_correctas;
-  }
+// function resultados() {
+//     document.getElementsByClassName("contador").innerHTML = "Total " + promByScore;
+//   }
 
-const sum = "Total " + sumaByScore(data);
+const sum = "Score promedio " + promByScore(data);
 document.getElementsByClassName('contador').innerHTML = sum;
 
 // ejemplo. probar ****

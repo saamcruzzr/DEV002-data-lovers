@@ -6,6 +6,7 @@ export const promByScore = (data) => {
     const promedio = total / data.films.length
     console.log("resultado suma " + total);
     console.log("resultado promedio " + promedio);
+    return promedio;
 }
   // const sum = data.films.map(  n => Number( n ) )
   // .reduce( (curr, accum) => curr.rt_score + accum.rt_score, 0);
