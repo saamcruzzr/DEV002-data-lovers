@@ -1,4 +1,5 @@
 import { example, anotherExample } from '../src/data.js';
+import { filterByDirector, sortByA, sortByD, filterByScore, promByScore } from './data.js';
 
 
 describe('example', () => {
@@ -21,3 +22,9 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+
+describe(filterByDirector,() => {});
+describe(sortByA,() => {});
+describe(sortByD,() => {});
+describe(filterByScore,() => {});
+describe(promByScore,() => {});

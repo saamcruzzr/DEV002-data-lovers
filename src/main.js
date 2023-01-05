@@ -1,10 +1,10 @@
 import data from './data/ghibli/ghibli.js';
-import { filterByDirector, sortByA, sortByD, filterByScore, sumaByScore } from './data.js';
+import { filterByDirector, sortByA, sortByD, filterByScore, promByScore } from './data.js';
 // , sumaByScore
 
 // CÁLCULO
 function resultados() {
-    document.getElementsByClassName("contador").innerHTML = "Total " + sumaByScore + "  " + "Resultado " + numero_correctas;
+    document.getElementsByClassName("contador").innerHTML = "Total " + promByScore + "  " + "Resultado " + numero_correctas;
   }
 
 const sum = "Total " + sumaByScore(data);

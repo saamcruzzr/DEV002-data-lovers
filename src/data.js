@@ -1,7 +1,7 @@
 
 //CALCULO ***
 
-export let sumaByScore = (data) => {
+export const promByScore = (data) => {
     const total = data.films.map(n => Number( n.rt_score ) ).reduce(function(a, b){ return a + b; }, 0);
     const promedio = total / data.films.length
     console.log("resultado suma " + total);
