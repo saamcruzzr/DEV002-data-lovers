@@ -1,6 +1,6 @@
 import data from './data/ghibli/ghibli.js';
 import { filterByDirector, sortByA, sortByD, filterByScore, sumaByScore } from './data.js';
-
+// , sumaByScore
 
 // CÁLCULO
 // document.getElementById("menu-principal").addEventListener("click", function(){
@@ -15,7 +15,7 @@ import { filterByDirector, sortByA, sortByD, filterByScore, sumaByScore } from '
 // const contador = document.getElementById("contador");
 document.getElementById("menu-principal").addEventListener("click",function() { 
   let sumas = sumaByScore(data); 
-  let suma = sumas/20 ;//enviar dos argumentos
+  let suma = sumas/20 ;
   //enlazar función filter de data.js
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja

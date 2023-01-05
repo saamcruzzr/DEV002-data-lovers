@@ -1,5 +1,5 @@
 
-//CALCULO
+//CALCULO ***
 
 export let sumaByScore = (data) => {
   // const sum = data.films.map(  n => Number( n ) )
@@ -9,7 +9,11 @@ export let sumaByScore = (data) => {
   // const sum = data.films.reduce( (curr, accum) => curr.rt_score + accum.rt_score, 0);
   // console.log( "Consola de suma " +sum );
 
-  var total = data.films.map(  n => Number( n ) ).reduce(function(a, b){ return a.rt_score + b.rt_score; });
+  var total = data.films.map(n => Number( n.rt_score ) ).reduce(function(a, b){ return a + b; }, 0);
+  const promedio = total / data.films.length
+  console.log(promedio)
+ 
+  //.reduce(function(a, b){ return a.rt_score + b.rt_score; });
   console.log("resultado " + total);
   console.log(total);
 }
