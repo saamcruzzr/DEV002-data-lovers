@@ -250,10 +250,10 @@ footer {
     border: none;
 }
 /*sólo para ver si funciona el botón*/
-#bnt-i:hover, #btn-m:hover {
+/* #bnt-i:hover, #btn-m:hover {
     background-color: #ae6ecc;
     border: none;
-}
+} */
 
 #boton-m, #boton-i {
     /* width: 40%;
