@@ -106,18 +106,18 @@ h1 {
     margin: auto;
 }
 
-.contador, .resultado {
+#contador, #resultado {
     margin: auto;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
-.contador {
+#contador {
     float: left;
     color: #F3ECB099;
 }
 
-.resultado {
+#resultado {
     float: right;
 }
 

@@ -2,8 +2,8 @@
 //CALCULO ***
 
 export const promByScore = (data) => {
-    const total = data.films.map(n => Number( n.rt_score ) ).reduce(function(a, b){ return a + b; }, 0);
-    const promedio = total / data.films.length
+    const total = data.map(n => Number( n.rt_score ) ).reduce(function(a, b){ return a + b; }, 0);
+    const promedio = total / data.length
     console.log("resultado suma " + total);
     console.log("resultado promedio " + promedio);
     return promedio;
@@ -68,7 +68,7 @@ export const promByScore = (data) => {
 // DIRECTORES
 export const filterByDirector = (string, data) => {
   // console.log (string, data.films)
-  const result =  data.films.filter(movie => movie.director === string); // retorno implicito
+  const result =  data.filter(movie => movie.director === string); // retorno implicito
   console.log(result);
   console.log("Resultado " + string);
   console.log("Total " + result.length);
@@ -77,8 +77,8 @@ export const filterByDirector = (string, data) => {
 } 
 
 // LANZAMIENTO
-export const sortByA = (data) => {
-  const result = [...data.films].sort((a,b) => {
+export const sortByAntigua = (data) => {
+  const result = [...data].sort((a,b) => {
     if (a.release_date === b.release_date) {
       return 0;
     }
@@ -92,8 +92,8 @@ export const sortByA = (data) => {
     return result ;
 } 
 
-export const sortByD = (data) => {
-  const result = [...data.films].sort((a,b) => {
+export const sortByReciente = (data) => {
+  const result = [...data].sort((a,b) => {
     //Si a y b eran iguales, devolvemos 0.
     if (a.release_date === b.release_date) {
       return 0;
@@ -111,7 +111,7 @@ export const sortByD = (data) => {
 
 // SCORE
 export const filterByScore = (min, max, data) => {
-  const result =  data.films.filter(movie => {
+  const result =  data.filter(movie => {
     return (movie.rt_score <= max && movie.rt_score >= min)
   }); 
   console.log(result);
