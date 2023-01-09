@@ -74,6 +74,7 @@ export const filterByDirector = (string, data) => {
   console.log("Total " + result.length);
   // contador.innerHTML = result.length;
   return result;
+  
 } 
 
 // LANZAMIENTO

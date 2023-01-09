@@ -1,6 +1,5 @@
 import data from './data/ghibli/ghibli.js';
 import { promByScore, filterByDirector, sortByAntigua, sortByReciente, filterByScore  } from './data.js';
-// , sumaByScore
 
 // CÁLCULO
 // function resultados() {
@@ -69,6 +68,8 @@ data.films.forEach(element => {
     </div>
     `
     tarjetas.innerHTML += tarjeta
+    // document.getElementById('contador').innerHTML = ("Total " + tarjeta.length);
+    // console.log(tarjeta)
 });
 
 // BOTÓN TODAS 
@@ -88,7 +89,8 @@ data.films.forEach(element => {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
-    console.log ("Mostrar Todas");
+    document.getElementById('resultado').innerHTML = "Resultado Todas";
+    document.getElementById('contador').innerHTML = sum;
   });
 
 // BOTONES DIRECTORES
@@ -108,6 +110,8 @@ document.getElementById("directores").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado " + event.target.id;
+    document.getElementById('contador').innerHTML = "Total " + director.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
@@ -129,6 +133,8 @@ document.getElementById("ordenDes").addEventListener("click",function() {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado Más Antiguas";
+    document.getElementById('contador').innerHTML = "Total " + data.films.length;
 }); 
 document.getElementById("ordenAsc").addEventListener("click",function() { 
   console.log ("Muestra Más recientes");
@@ -145,6 +151,8 @@ document.getElementById("ordenAsc").addEventListener("click",function() {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado Más Recientes";
+    document.getElementById('contador').innerHTML = "Total " + data.films.length;
 }); 
 
 //BOTONES SCORES
@@ -164,6 +172,8 @@ document.getElementById("0-69").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado 0 a 69";
+    document.getElementById('contador').innerHTML = "Total " + score.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
@@ -182,6 +192,8 @@ document.getElementById("70-80").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado 70 a 80";
+    document.getElementById('contador').innerHTML = "Total " + score.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
@@ -200,6 +212,8 @@ document.getElementById("81-85").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado 81 a 85";
+    document.getElementById('contador').innerHTML = "Total " + score.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
@@ -218,6 +232,8 @@ document.getElementById("86-90").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado 86 a 90";
+    document.getElementById('contador').innerHTML = "Total " + score.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
@@ -236,6 +252,8 @@ document.getElementById("91-95").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado 91 a 95";
+    document.getElementById('contador').innerHTML = "Total " + score.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
@@ -254,6 +272,8 @@ document.getElementById("96-100").addEventListener("click",function(event) {
     </div>
     `
     tarjetas.innerHTML += tarjeta});
+    document.getElementById('resultado').innerHTML = "Resultado 96 a 100";
+    document.getElementById('contador').innerHTML = "Total " + score.length;
     // let menu = document.getElementById("menu-principal");
     // menu.style.display = "none"; //si quiero seleccionar otra cosa ya no me deja
 });
