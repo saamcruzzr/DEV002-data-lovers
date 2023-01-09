@@ -6,7 +6,7 @@ import { promByScore, filterByDirector, sortByAntigua, sortByReciente, filterByS
 //     document.getElementsByClassName("contador").innerHTML = "Total " + promByScore;
 //   }
 
-const sum = "Score promedio " + promByScore(data.films);
+const sum = "Score Promedio " + promByScore(data.films);
 document.getElementById('contador').innerHTML = sum;
 
 // ejemplo. probar ****

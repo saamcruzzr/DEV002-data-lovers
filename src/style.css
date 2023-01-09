@@ -123,6 +123,8 @@ h1 {
 
 #tarjetas {
      margin-bottom: 18%; /*180px */
+     /* column-count:2;
+     background-color: aqua; */
 }
 
 .contenedor {
@@ -131,7 +133,7 @@ h1 {
     border-radius: 50px;
     border: 10px;*/
     /* box-sizing: border-box; */
-
+    
     /*position: absolute;*/
     max-width: 90%;
     /* width: fit-content; */
@@ -299,46 +301,6 @@ footer {
 #boton-i {
     float: right;
 }
-/* 
-#menu {
-    float: left;
-}
-
-#inicio {
-    float: right;
-} */
-/* 
-ul, ol {
-    list-style: none;
-    display: none;
-    position: absolute;
-}
-
-#btn-m li {
-    background-color: #F3ECB0;
-    color: #344D67;
-    text-decoration: none;
-    padding: 10px 5px;
-    display: block;
-    text-align: left;
-   
-}
-
-#boton-m > li {
-    float: left;
-}
-#btn-m li:hover {
-    display: block;
-}
-#btn-m li > ul {
-    display: block;
-} */
-
-/* AQUI QUISE SEPARAR EL MENÚ DE LA ORILLA, PERO CONTINUA CON EL COLOR DE FONDO
-#menu-principal {
-    width: 80%;
-    left: 20%;
-} */
 
 #btn-m:hover > ul {
     display: block;
@@ -387,10 +349,133 @@ ul, ol {
     bottom:25%;
 }
 #tres ul {
-    right:-63%;
+    right:-47%;
     bottom:0;
 }
 #btn-m li ul li ul {
     right:-140px;
     top:0;
+}
+
+
+
+
+
+/* @media (min-width:600px){
+    body{
+        background-color: yellowgreen;
+    }
+}
+
+@media (max-width:820px){
+    body{
+        background-color: red;
+    }
+} */
+
+/* @media (min-width:981px){
+    body{
+        background-color: yellowgreen;
+    }
+}
+
+@media (max-width:980px){
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width:820px){
+    body{
+        background-color: red;
+    }
+} */
+/* MQ SI ES MÁXIMO LOS VALORES ALTOS PRIMERO, SI ES MINIMO LOS VALORES BAJOS PRIMERO
+https://www.youtube.com/watch?v=yneuaVjotO8&t=633s */
+/* 
+MOBILE 
+360*640
+TABLET
+820*1180 
+DESKTOP
+1920*1080
+*/
+@media screen and (max-width: 2000px) {
+    body{
+        background-color: rgb(161, 112, 216); /*  */
+    }
+    header{
+        position: fixed;
+        background-color: #344D67;
+        width: 100%;
+        min-height: 15%; /*  */
+        top: 0;
+        z-index: 2;
+    }
+    
+    .logo {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    
+    #G-logo, #L-logo {
+        font-family:'Delius Unicase', cursive;
+        font-weight: 700;
+        font-size: 28pt; /*  */
+        text-align: center;
+        text-decoration-line: none;
+    }
+    
+    #G-logo {
+        color: #6ECCAF;
+    }
+    
+    #L-logo {
+        color: #ADE792;
+    }
+    
+    nav{
+        width: 65%;
+        height: 50px;
+        margin: auto; 
+    }
+    
+    #Filmografía, #Cronología {
+        color: #F3ECB099;
+        text-decoration-line: none;
+        font-family: 'Mitr', sans-serif;
+        font-size: 15pt; /*  */
+        font-weight: 300;
+        display: flex;
+    }
+    
+    #Filmografía:hover, #Cronología:hover {
+        color: #F3ECB0;
+    }
+    
+    #Filmografía{
+        float: left;
+    }
+    
+    #Cronología{
+        float: right;
+    }
+    
+}
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+    body{
+        background-color: palevioletred;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+    body{
+        background-color: rgb(216, 214, 112);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: rgb(112, 216, 211);
+    }
 }
