@@ -140,14 +140,15 @@ Dentro del menú fijo tenemos el botón para filtrar por película, mostrar sól
 
 
 Dentro de este enlace se puede explorar el prototipo interactuando con él.
-![figma](https://www.figma.com/proto/FWujAfgSdHlNagMyu3dT3O/DL-DEV002-(IMAGENES)?page-id=0%3A1&node-id=7%3A2&viewport=-1668%2C964%2C1&scaling=scale-down&starting-point-node-id=7%3A2)
+#### Figma
+https://www.figma.com/proto/FWujAfgSdHlNagMyu3dT3O/DL-DEV002-(IMAGENES)?page-id=0%3A1&node-id=7%3A2&viewport=-1668%2C964%2C1&scaling=scale-down&starting-point-node-id=7%3A2
 
 
 
 ## TECNOLOGÍAS UTILIZADAS
-Visual Studio Code
-Figma
-Github
-Zoom
-Slack
-Trello
+### Visual Studio Code
+### Figma
+### Github
+### Zoom
+### Slack
+### Trello
