@@ -1,4 +1,5 @@
 
+
 //CALCULO ***
 
 export const promByScore = (data) => {
@@ -17,6 +18,7 @@ export const filterByDirector = (string, data) => {
   console.log("Resultado " + string);
   console.log("Total " + result.length);
   // contador.innerHTML = result.length;
+
   return result;
   
 } 
@@ -40,31 +42,23 @@ export const sortByAntigua = (data) => {
 export const sortByReciente = (data) => {
   const result = [...data].sort((a,b) => {
     //Si a y b eran iguales, devolvemos 0.
+
     if (a.release_date === b.release_date) {
       return 0;
     }
-    //Si a es menor que b, devolvemos -1, que es un valor por debajo de cero.
     if ( b.release_date < a.release_date ) {
       return -1;
     }
-    //Al final devolvemos 1, porque querrá decir que no eran ni iguales ni a era menor que b.
     return 1;
   });
-    console.log(result);
     return result ;
 } 
 
 // SCORE
 export const filterByScore = (min, max, data) => {
   const result =  data.filter(movie => {
+
     return (movie.rt_score <= max && movie.rt_score >= min)
   }); 
-  console.log(result);
-  console.log("Resultado", min, max )
-  console.log("Total " + result.length);
-  // contador.innerHTML = result.length;
   return result;
 } 
-
-
-
