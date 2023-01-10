@@ -1,5 +1,5 @@
  
-import { promByScore, filterByDirector, filterByScore, sortByReciente  } from '../src/data.js';
+import { promByScore, filterByDirector, filterByScore, sortByReciente, sortByAntigua  } from '../src/data.js';
 //sortByAntigua, 
 
 //TEST PROMEDIO
@@ -111,9 +111,8 @@ describe("Pruebas para la funcion sortByAntigua",() => {
           "title": "The Tale of the Princess Kaguya",
           "release_date": "2013" }
       ]
-
-    const resultado = sortByReciente(arr)
-
+ 
+    const resultado = sortByAntigua(arr)
     expect(resultado).toEqual(arrEsperado)    
   })
 });
@@ -149,10 +148,9 @@ describe("Pruebas para la funcion sortByReciente",() => {
           "title": "Castle in the Sky",
           "release_date": "1986" }
       ]
-
+   
     const resultado = sortByReciente (arr)
-
-    expect(resultado).toBe(arrEsperado)
+    expect(resultado).toEqual(arrEsperado)
   })
 });
 

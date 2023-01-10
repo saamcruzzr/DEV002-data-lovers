@@ -9,6 +9,17 @@ Mitr: 200;300;400;500;600;700*/
     margin: 0;
   }
 
+body {
+    background-color: #344D67;
+    color: #ADE792;
+    /*font-family: ;
+    font-size: 28px;*/
+    text-align: center;
+    align-items: center;
+    /* display: flex; */
+    /* width: 100%; */
+}
+
 header{
     position: fixed;
     background-color: #344D67;
@@ -66,14 +77,6 @@ nav{
     float: right;
 }
 
-body {
-    background-color: #344D67;
-    color: #ADE792;
-    /*font-family: ;
-    font-size: 28px;*/
-    text-align: center;
-    align-items: center;
-}
 
 main{
     margin-top: 28%;
@@ -125,6 +128,12 @@ h1 {
      margin-bottom: 18%; /*180px */
      /* column-count:2;
      background-color: aqua; */
+     /* display: flex; */
+
+        /* display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap; */
 }
 
 .contenedor {
@@ -148,6 +157,10 @@ h1 {
     align-items: center;
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        /* flex-grow: 1;
+        width: 350px;
+        height: 300px; */
 }
 
 .imagen {
@@ -400,15 +413,15 @@ TABLET
 DESKTOP
 1920*1080
 */
-@media screen and (max-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
     body{
-        background-color: rgb(161, 112, 216); /*  */
+        background-color: rgb(161, 112, 216); 
     }
     header{
         position: fixed;
         background-color: #344D67;
         width: 100%;
-        min-height: 15%; /*  */
+        min-height: 15%; 
         top: 0;
         z-index: 2;
     }
@@ -421,7 +434,7 @@ DESKTOP
     #G-logo, #L-logo {
         font-family:'Delius Unicase', cursive;
         font-weight: 700;
-        font-size: 28pt; /*  */
+        font-size: 28pt; 
         text-align: center;
         text-decoration-line: none;
     }
@@ -444,7 +457,7 @@ DESKTOP
         color: #F3ECB099;
         text-decoration-line: none;
         font-family: 'Mitr', sans-serif;
-        font-size: 15pt; /*  */
+        font-size: 15pt; 
         font-weight: 300;
         display: flex;
     }
@@ -461,21 +474,51 @@ DESKTOP
         float: right;
     }
     
-}
-@media screen and (min-width: 780px) and (max-width: 1024px) {
+} */
+/* @media screen and (max-width: 480px)  {
     body{
-        background-color: palevioletred;
+        background-color: palevioletred;and (max-width: 1024px)
     }
+    body{
+        background-color: rgb(161, 112, 216); 
+    }
+   
 }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
     body{
         background-color: rgb(216, 214, 112);
     }
-}
-
-@media screen and (max-width: 480px) {
+}     */
+/* 
+@media only screen and (min-width: 480px) {
     body{
         background-color: rgb(112, 216, 211);
+        height: 100%;
+        width: 100%;
+    } 
+    #tarjetas{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;       
     }
-}
+    .contenedor {
+        flex-grow: 1;
+        width: 400px;
+        height: 350px;
+    }
+    #G-logo, #L-logo {
+        font-size: 30pt;
+    }
+} */
+
+
+ /* #tarjetas{
+ display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 350px;
+        width: 100%;
+        height: 100%;
+        gap: 20px ; */
+        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1rf)); */
