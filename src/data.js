@@ -1,22 +1,31 @@
 
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+//CALCULO ***
 
-export const anotherExample = () => {
-  return 'OMG';
-};
-
+export const promByScore = (data) => {
+    const total = data.map(n => Number( n.rt_score ) ).reduce(function(a, b){ return a + b; }, 0);
+    const promedio = total / data.length
+    console.log("resultado suma " + total);
+    console.log("resultado promedio " + promedio);
+    return promedio;
+}
+ 
 // DIRECTORES
-export const filterBy = (string, data) => {
-  const result =  data.films.filter(movie => movie.director === string); 
+export const filterByDirector = (string, data) => {
+  // console.log (string, data.films)
+  const result =  data.filter(movie => movie.director === string); // retorno implicito
+  console.log(result);
+  console.log("Resultado " + string);
+  console.log("Total " + result.length);
+  // contador.innerHTML = result.length;
+
   return result;
+  
 } 
+
 // LANZAMIENTO
-export const sortByA = (data) => {
-  const result = [...data.films].sort((a,b) => {
+export const sortByAntigua = (data) => {
+  const result = [...data].sort((a,b) => {
     if (a.release_date === b.release_date) {
       return 0;
     }
@@ -25,10 +34,15 @@ export const sortByA = (data) => {
     }
     return 1;
   });
+
+    console.log(result);
     return result ;
 } 
-export const sortByD = (data) => {
-  const result = [...data.films].sort((a,b) => {
+
+export const sortByReciente = (data) => {
+  const result = [...data].sort((a,b) => {
+    //Si a y b eran iguales, devolvemos 0.
+
     if (a.release_date === b.release_date) {
       return 0;
     }
@@ -39,9 +53,11 @@ export const sortByD = (data) => {
   });
     return result ;
 } 
+
 // SCORE
-export const filterByS = (min, max, data) => {
-  const result =  data.films.filter(movie => {
+export const filterByScore = (min, max, data) => {
+  const result =  data.filter(movie => {
+
     return (movie.rt_score <= max && movie.rt_score >= min)
   }); 
   return result;
