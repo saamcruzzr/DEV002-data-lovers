@@ -1,10 +1,10 @@
 # Data Lovers
 Web final al mes de enero 2023
-
+- Versión mobile
 ![Versión mobile](https://github.com/saamcruzzr/DEV002-data-lovers/blob/main/src/imagenes/MOBILE.jpg)
-
+- Versión ipad
 ![Versión ipad](https://github.com/saamcruzzr/DEV002-data-lovers/blob/main/src/imagenes/IPAD.jpg)
-
+- Versión desktop
 ![Versión desktop](https://github.com/saamcruzzr/DEV002-data-lovers/blob/main/src/imagenes/DESKTOP.jpg)
 
 Test unitarios
