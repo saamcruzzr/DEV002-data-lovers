@@ -4,8 +4,8 @@
 export const promByScore = (data) => {
     const total = data.map(n => Number( n.rt_score ) ).reduce(function(a, b){ return a + b; }, 0);
     const promedio = total / data.length
-    console.log("resultado suma " + total);
-    console.log("resultado promedio " + promedio);
+    // console.log("resultado suma " + total);
+    // console.log("resultado promedio " + promedio);
     return promedio;
 }
  
@@ -13,9 +13,9 @@ export const promByScore = (data) => {
 export const filterByDirector = (string, data) => {
   // console.log (string, data.films)
   const result =  data.filter(movie => movie.director === string); // retorno implicito
-  console.log(result);
-  console.log("Resultado " + string);
-  console.log("Total " + result.length);
+  // console.log(result);
+  // console.log("Resultado " + string);
+  // console.log("Total " + result.length);
   // contador.innerHTML = result.length;
   return result;
   
@@ -33,7 +33,7 @@ export const sortByAntigua = (data) => {
     return 1;
   });
 
-    console.log(result);
+    // console.log(result);
     return result ;
 } 
 
@@ -50,7 +50,7 @@ export const sortByReciente = (data) => {
     //Al final devolvemos 1, porque querrá decir que no eran ni iguales ni a era menor que b.
     return 1;
   });
-    console.log(result);
+    // console.log(result);
     return result ;
 } 
 
@@ -59,9 +59,9 @@ export const filterByScore = (min, max, data) => {
   const result =  data.filter(movie => {
     return (movie.rt_score <= max && movie.rt_score >= min)
   }); 
-  console.log(result);
-  console.log("Resultado", min, max )
-  console.log("Total " + result.length);
+  // console.log(result);
+  // console.log("Resultado", min, max )
+  // console.log("Total " + result.length);
   // contador.innerHTML = result.length;
   return result;
 } 
