@@ -1,15 +1,32 @@
 # Data Lovers
 
+## Índice
+
+* [1. DESCRIPCIÓN DEL PROYECTO](#-descripción-del-proyecto-Ghibli-Lovers)
+* [2. OBJETIVOS DEL PROYECTO](#2-objetivos-del-proyecto)
+* [3. CONSIDERACIONES GENERALES](#3-consideraciones-generales)
+* [4. HISTORIAS DEL USUARIO](#4-historias-del-usuario)
+* [5. PROTOTIPOS](#5-prototipos)
+* [6. TECNOLOGÍAS UTILIZADAS](#6-tecnologías-utilizadas)
+
+
 ## DESCRIPCIÓN DEL PROYECTO: Ghibli Lover's
+
 Studio Ghibli es un estudio de animación japonés, conocido por sus largometrajes animados considerados grandes éxitos.
 Las animaciones tienen gran acogida a nivel mundial y algunas han recibido varias nominaciones y premios. De todo este fandom hay un grupo que desea poder interactuar y ver la información de las animaciones y sus personajes.
+
 Debido a esto, se vio la necesidad de poder elaborar un producto digital en el cual se pueda consolidar la información relacionada a los largometrajes y le permita al usuario obtener  estos datos de forma dinámica y de acuerdo a sus necesidades.
+
 Para este proyecto es necesario completar los objetivos de aprendizaje trabajando de manera colaborativa (dupla).  Para ello fue indispensable realizar prototipos de baja y alta fidelidad, manejo de HTML semántico, JavaScript, CSS, web APIs, control de versiones GIT-GITHUB así como testeos de usabilidad. El conjunto de estas funciones nos llevará a una interfaz donde se mostrará la data del Studio Ghibli de manera organizada y manejable para el usuario final.
  
 ## OBJETIVOS DEL PROYECTO
+
 ### Objetivo general
+
 El objetivo principal de este proyecto es aprender a diseñar y construir una interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el usuario necesita.
+
 ### Objetivos específicos
+
 Buscar entender quién es el usuario y qué necesita saber o ver exactamente.
 Crear una página web que permita visualizar la data, filtrar, ordenar y hacer algún cálculo agregado.
 Realizar test unitarios.
@@ -57,6 +74,7 @@ Tiempo de referencia para cumplir OAs: 4 semanas.
  
  
 ## HISTORIAS DEL USUARIO
+
 ### LANDING PAGE
 Como: usuario fanático de las animaciones del Studio Ghibli
 Quiero: visualizar un menú general donde pueda elegir entre las opciones de: 1: las animaciones; 2: directores y productores; 3: sus personajes; 4: las locaciones y los vehículos utilizados en ellas.
@@ -97,10 +115,12 @@ XXX
 ## PROTOTIPOS
 
 ### Baja fidelidad
+
 Se realizaron varios bocetos a lápiz, los cuales se fueron puliendo mediante feedback de compañeras y coaches. Una vez teniendo el VoBo, y definiendo correctamente las HU se procedió a realizar el prototipo de alta fidelidad.
 
 
 ### Alta fidelidad
+
 Para elaborar el prototipo de alta fidelidad elegimos:
 
 La paleta de color
@@ -130,25 +150,32 @@ Nuestro menú fijo permanece visible en todas las historias, con excepción de l
 
 
 ### HU (Personajes)
+
 Mostramos el total de personajes. Estos en versión mobile se muestran en dos columnas. Cada tarjeta de personaje viene con foto y datos. 
 En nuestro menú fijo tenemos el botón para filtrar por género, edad y especie (humano, animal y otro), y el botón de regresar a inicio.
 
 
 ### HU (Locaciones y Vehículos)
+
 Mostramos como en las otras historias, el total de elementos que aparecen dentro del apartado de locaciones y vehículos. Cada elemento viene con la foto y sus datos. Estos se muestran volteando la tarjeta una vez que pasa el cursor encima de la foto o se le da click en mobile. 
 Dentro del menú fijo tenemos el botón para filtrar por película, mostrar sólo locaciones y mostrar sólo vehículos. Y el botón de regresar a inicio.
 
 
 Dentro de este enlace se puede explorar el prototipo interactuando con él.
 #### Figma
-https://www.figma.com/proto/FWujAfgSdHlNagMyu3dT3O/DL-DEV002-(IMAGENES)?page-id=0%3A1&node-id=7%3A2&viewport=-1668%2C964%2C1&scaling=scale-down&starting-point-node-id=7%3A2
 
+* [Prototipo interactivo alta fidelidad](https://www.figma.com/proto/FWujAfgSdHlNagMyu3dT3O/DL-DEV002-(IMAGENES)?page-id=275%3A2&node-id=275%3A3&viewport=1078%2C1525%2C1&scaling=min-zoom&starting-point-node-id=275%3A448)
 
-
+  
 ## TECNOLOGÍAS UTILIZADAS
-### Visual Studio Code
-### Figma
-### Github
-### Zoom
-### Slack
-### Trello
+
+## DESARROLLADORAS
+
+Proyecto desarrollado remotamente desde distintos lugares de México de manera síncrona y asíncrona por:
+
+#### Samantha Cruz
+Radicando en el Ecatepec, Estado de México y en ocasiones Santiago de Querétaro.
+
+> En colaboración con Tania García. Radicando en el estado de Guerrero.
+
+Ambas estudiantes de < Laboratoria > en el cohort regional DEV002.
