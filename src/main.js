@@ -12,14 +12,14 @@ document.getElementById('contador').innerHTML = sum;
 const tarjetas = document.getElementById("tarjetas");
 data.films.forEach(element => {
     const tarjeta = `
-    <div class="contenedor"> 
-          <section class="imagen"><figure><img id="poster" src="${element.poster}"</figure></section>
-          <section class="texto">
-            <p id= "titulo"> ${element.title}</p>
-            <p id= "datos"> Director: ${element.director} <br> Productor: ${element.producer} <br> Lanzamiento: ${element.release_date} <br> Score: ${element.rt_score}</p>
-          </section>
-    </div>
-    `
+      <div class="contenedor"> 
+            <section class="imagen"><figure><img id="poster" src="${element.poster}"</figure></section>
+            <section class="texto">
+              <p id= "titulo"> ${element.title}</p>
+              <p id= "datos"> Director: ${element.director} <br> Productor: ${element.producer} <br> Lanzamiento: ${element.release_date} <br> Score: ${element.rt_score}</p>
+            </section>
+      </div>
+      `
     tarjetas.innerHTML += tarjeta
 });
 
@@ -50,6 +50,7 @@ document.getElementById("directores").addEventListener("click",function(event) {
   // console.log (event.target.id);
   let director = filterByDirector(event.target.id, data.films); //enviar dos argumentos
   //enlazar función filter de data.js
+
   tarjetas.innerHTML = "";
   director.forEach(element => {
     const tarjeta = `
@@ -73,6 +74,7 @@ document.getElementById("directores").addEventListener("click",function(event) {
 document.getElementById("ordenDes").addEventListener("click",function() { 
   // console.log ("Muestra Más antiguas");
   let ordenar = sortByAntigua(data.films);
+
   tarjetas.innerHTML = "";
   ordenar.forEach(element => {
     const tarjeta = `
@@ -91,6 +93,7 @@ document.getElementById("ordenDes").addEventListener("click",function() {
 document.getElementById("ordenAsc").addEventListener("click",function() { 
   // console.log ("Muestra Más recientes");
   let ordenar = sortByReciente(data.films);
+
   tarjetas.innerHTML = "";
   ordenar.forEach(element => {
     const tarjeta = `
@@ -112,6 +115,7 @@ document.getElementById("ordenAsc").addEventListener("click",function() {
 document.getElementById("0-69").addEventListener("click",function(event) { 
   // console.log (event.target.rt_score);
   let score = filterByScore(0, 69, data.films); //enviar 3 argumentos
+
   tarjetas.innerHTML = "";
   score.forEach(element => {
     const tarjeta = `
@@ -132,6 +136,7 @@ document.getElementById("0-69").addEventListener("click",function(event) {
 document.getElementById("70-80").addEventListener("click",function(event) { 
   // console.log (event.target.rt_score);
   let score = filterByScore(70, 80, data.films); //enviar 3 argumentos
+
   tarjetas.innerHTML = "";
   score.forEach(element => {
     const tarjeta = `
@@ -152,6 +157,7 @@ document.getElementById("70-80").addEventListener("click",function(event) {
 document.getElementById("81-85").addEventListener("click",function(event) { 
   // console.log (event.target.rt_score);
   let score = filterByScore(81, 85, data.films); //enviar 3 argumentos
+
   tarjetas.innerHTML = "";
   score.forEach(element => {
     const tarjeta = `
@@ -172,6 +178,7 @@ document.getElementById("81-85").addEventListener("click",function(event) {
 document.getElementById("86-90").addEventListener("click",function(event) { 
   // console.log (event.target.rt_score);
   let score = filterByScore(86, 90, data.films); //enviar 3 argumentos
+
   tarjetas.innerHTML = "";
   score.forEach(element => {
     const tarjeta = `
@@ -192,6 +199,7 @@ document.getElementById("86-90").addEventListener("click",function(event) {
 document.getElementById("91-95").addEventListener("click",function(event) { 
   // console.log (event.target.rt_score);
   let score = filterByScore(91, 95, data.films); //enviar 3 argumentos
+
   tarjetas.innerHTML = "";
   score.forEach(element => {
     const tarjeta = `
@@ -212,6 +220,7 @@ document.getElementById("91-95").addEventListener("click",function(event) {
 document.getElementById("96-100").addEventListener("click",function(event) { 
   // console.log (event.target.rt_score);
   let score = filterByScore(96, 100, data.films); //enviar 3 argumentos
+
   tarjetas.innerHTML = "";
   score.forEach(element => {
     const tarjeta = `
